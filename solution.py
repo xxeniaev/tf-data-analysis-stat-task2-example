@@ -22,4 +22,4 @@ def solution(p: float, x: np.array) -> tuple:
     left = chi2_rv.ppf(1 - alpha / 2)  # b
     right = chi2_rv.ppf(alpha / 2)  # a
 
-    return np.sqrt(n * x2_mean / (left * 48)), np.sqrt(n * x2_mean / (right * 48))
+    return np.sqrt(n * x2_mean / (left * 40)), np.sqrt(n * x2_mean / (right * 40))
